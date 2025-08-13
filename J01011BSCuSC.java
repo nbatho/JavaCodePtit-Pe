@@ -1,5 +1,5 @@
 import java.util.*;
-public class J01011bSCuSC {
+public class J01011BSCuSC {
 
     public static long GCD(long a, long b) {
         while (b != 0) {
