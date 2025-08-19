@@ -2,8 +2,6 @@ import java.util.*;
 
 public class J02022SoXaCach {
     static int n;
-    static List<String> ans;
-
     public static void Try(int i, int[] a, int[] vs) {
         for (int j = 1; j <= n; j++) {
             if (vs[j] == 0) {
@@ -18,11 +16,10 @@ public class J02022SoXaCach {
                         }
                     }
                     if (valid) {
-                        StringBuilder tmp = new StringBuilder();
                         for (int k = 1; k <= n; k++) {
-                            tmp.append(a[k]);
+                            System.out.print(a[k]);
                         }
-                        ans.add(tmp.toString());
+                        System.out.println("");
                     }
                 } else {
                     Try(i + 1, a, vs);
@@ -39,12 +36,7 @@ public class J02022SoXaCach {
             n = sc.nextInt();
             int[] a = new int[15];
             int[] vs = new int[15];
-            ans = new ArrayList<>();
             Try(1, a, vs);
-            Collections.sort(ans);
-            for (String s : ans) {
-                System.out.println(s);
-            }
         }
     }
 }
