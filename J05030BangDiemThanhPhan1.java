@@ -2,7 +2,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class J05030BanDiemThanhPhan1 {
+public class J05030BangDiemThanhPhan1 {
     static class SV {
         String msv,tsv,lop;
         double d1,d2,d3;
