@@ -2,7 +2,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class J5071TinhCuocDienThoaiCoDinh1 {
+public class J05071TinhCuocDienThoaiCoDinh1 {
     static class Vung{
         String ma;
         int cuoc;
