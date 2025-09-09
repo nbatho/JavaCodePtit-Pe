@@ -12,7 +12,7 @@ public class J07029SoNguyenToLonNhatTrongFile {
         return true;
     }
     public static void main(String[] args) throws Exception{
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("SONGUYEN.in"));
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("DATA.in"));
 
         ArrayList <Integer> list = (ArrayList<Integer>) ois.readObject();
 
@@ -22,7 +22,7 @@ public class J07029SoNguyenToLonNhatTrongFile {
                 mp.put(x, mp.getOrDefault(x, 0) + 1);
         }
 
-        for (int i = 0; i < 10 && !mp.isEmpty(); i++) {
+        for (int i = 0 ;i < 10;i++) {
             int k = mp.lastKey();
             System.out.println(k + " " + mp.get(k));
             mp.remove(k);
